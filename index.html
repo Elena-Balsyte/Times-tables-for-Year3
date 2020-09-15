@@ -1,0 +1,65 @@
+<!doctype html>
+<html  lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Times tables for cheeky monkey</title>
+  <meta name= "description" content="App for kids to practice times tables">
+  <meta name= "viewport" content= "width=device-width, initial-scale=1">
+
+  <link rel= "stylesheet" href= "css/normalize.css">
+  <link rel= "stylesheet" href= "css/main.css">
+
+  <meta name= "theme-color" content= "#fafafa">
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class= "browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+
+  <header>
+    <div class="content-wrapper-row">
+      <h1>Little cheeky monkey is learning times tables</h1>
+    </div>
+  </header>
+
+  <main>
+    <div id="greeting" class="content-wrapper-col">
+  <h2>I haven't met you yet... tell me your name!</h2>
+      <div id="name">
+          <label for="lname">What's your name, goergous?</label>
+        <input type = "text" id="fname" placeholder ="name" value="">
+        <button type="button" name="submit" id = "name-submit">Click</button>
+      </div>
+
+    </div>
+
+    <div class="content-wrapper-row">
+      <div id="question">
+        <p>How much is...</p>
+      </div>
+      <div id="answer">
+        <input type='text' id="ans"></input>
+      </div>
+      <div class="submit">
+        <button type="button" name="submit" id="check">Check</button>
+      </div>
+    </div>
+    <div class ="content-wrapper-row">
+      <p id="gameResult">Let's see how many times tables you already know!</p>
+    </div>
+  </main>
+  <footer>
+    <p>Developed by Elena Balsyte | <a href="https://developer-elena.co.uk/index.html" target='_blank'>www.developer-elena.co.uk</a>
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
