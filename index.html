@@ -19,47 +19,68 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-
   <header>
-    <div class="content-wrapper-row">
-      <h1>Little cheeky monkey is learning times tables</h1>
-    </div>
-  </header>
-
-  <main>
-    <div id="greeting" class="content-wrapper-col">
-  <h2>I haven't met you yet... tell me your name!</h2>
-      <div id="name">
-          <label for="lname">What's your name, goergous?</label>
-        <input type = "text" id="fname" placeholder ="name" value="">
-        <button type="button" name="submit" id = "name-submit">Click</button>
+      <div class="content-wrapper-row">
+        <h1>Little cheeky monkey is learning times tables</h1>
+      </div>
+    </header>
+    <main>
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn">x</a>
+        <p><span id="gameResult"></span></p>
+        <ul id="wrong-answers"></ul>
+        <div class="submit">
+          <button type="button" name="submit" id="startNewGame">New game</button>
+        </div>
       </div>
 
-    </div>
+      <div id="greeting" class="content-wrapper-col">
+    <h2>Hello! Have me met? Before you start... tell me your name!</h2>
+        <div id="name">
+            <label for="fname">What's your name?</label>
+          <input type = "text" id="fname" placeholder ="name" value="">
+          <button type="button" name="submit" id = "name-submit">Click</button>
+        </div>
 
-    <div class="content-wrapper-row">
-      <div id="question">
-        <p>How much is...</p>
       </div>
-      <div id="answer">
-        <input type='text' id="ans"></input>
+      <div class ="content-wrapper-row">
+        <p id="questionResult">Let's see how many times tables you already know!</p>
       </div>
-      <div class="submit">
-        <button type="button" name="submit" id="check">Check</button>
+      <div class="content-wrapper-row">
+        <div id="question">
+          <p>How much is...</p>
+        </div>
+        <div id="answer">
+          <input type='text' id="ans">
+        </div>
+        <div class="submit">
+          <button type="button" name="submit" id="check">Check</button>
+        </div>
       </div>
-    </div>
-    <div class ="content-wrapper-row">
-      <p id="gameResult">Let's see how many times tables you already know!</p>
-    </div>
-  </main>
-  <footer>
-    <p>Developed by Elena Balsyte | <a href="https://developer-elena.co.uk/index.html" target='_blank'>www.developer-elena.co.uk</a>
-  </footer>
+
+      <div class="content-wrapper-row">
+        <div id="correct">
+          <p>Correct: <span id = "correctScore"></span></p>
+        </div>
+        <div id="incorrect">
+          <p>Incorrect: <span id = "incorrectScore"></span></p>
+        </div>
+        <div class="reset">
+          <button type="button" name="submit" id="reset">Result</button>
+        </div>
+      </div>
+
+
+
+    </main>
+    <footer>
+      <p>Developed by Elena Balsyte | <a href="https://developer-elena.co.uk/index.html" target='_blank'>www.developer-elena.co.uk</a>
+    </footer>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
